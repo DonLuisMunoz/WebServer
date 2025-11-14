@@ -36,7 +36,6 @@ class RequestHandler(BaseHTTPRequestHandler):
         return self.PAGE.format(**values)
     
 
-    # Handle a GET Request
     def send_page(self, PAGE: str) -> None:
         self.send_response(200)
         self.send_header("Content-Type", "text/html; charset=utf-8")
